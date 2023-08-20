@@ -16,6 +16,7 @@ code {
 .SplashScreen{
   position: fixed;
   display: flex;
+  z-index: 1200;
   justify-content: center;
   align-items: center;
   width: 100%;
