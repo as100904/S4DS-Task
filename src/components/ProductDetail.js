@@ -13,6 +13,7 @@ function ProductDetail({ setDisplayProductDetail , product}) {
       </button>
       
       <div className='ProductContainer'>
+        
         <ul className='ProductImg'>
           <img id='mainImg' src={selectedImg} alt='thumbnail' />
           {productImageList.map( (img) => {
