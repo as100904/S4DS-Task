@@ -6,10 +6,10 @@ function Product({ setSelectedProduct ,setDisplayProductDetail , product }) {
   const clickHandler = () =>{
     setDisplayProductDetail(true)
     setSelectedProduct(product)
+    window.scrollTo(0,70)
   }
   return (
       <div className='productTile link' onClick={clickHandler} >
-
         <img src={product.thumbnail} alt={product.title} />
         <h1 className='pad-top-15 capitalize'>{product.title}</h1>
         <h4 className='whitespace-pre'>Brand: {product.brand}</h4>
