@@ -4,12 +4,13 @@ import ProductSection from './ProductSection'
 import Menu from './Menu'
 
 
-function Main({menuVisible , setMenuVisible}) {
+function Main() {
   
  return (
       
       <div className='main'>
-        {menuVisible && <Menu />} 
+        {/* {menuVisible && <Menu />}  */}
+        <Menu />
         <ProductSection />
       </div>
     

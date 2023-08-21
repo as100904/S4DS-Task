@@ -14,7 +14,7 @@
     position: relative;
     margin-right: 20px;
     left: 0px;
-    /* margin-top: 70px; */
+    margin-top: 70px;
     width: 300px;
     z-index: 1300;
     background-color: rgb(34, 30, 71);   
@@ -42,6 +42,7 @@
     justify-content: center;
     flex-direction: column;
     list-style-type: none;
+    z-index: 1300;
     width: 100%;
 }
 

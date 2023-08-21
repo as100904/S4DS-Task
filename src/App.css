@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@325&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lato' , sans-serif;
+  font-family: 'Play' , sans-serif;
 }
 
-
+body{
+  overflow-x: hidden;
+}
 
 @keyframes buttonclick {  
   to{
@@ -15,29 +17,26 @@
   }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .header{
   background-color: rgb(34, 30, 71);
   height: 70px;
   width: 100%;
-  z-index: 1000; /* 3d z-index so that header isnt overlapped by anything*/
+  /* max-width: 100%; */
+  z-index: 1400; /* 3d z-index so that header isnt overlapped by anything*/
   top: 0;
   position: fixed;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
 .header img{
   height: 60px;
   width: auto;
-  margin-left: 38%;
+  /* margin-left: 38px; */
 }
 
-.header button{
+/* .header button{
   position: relative;
   margin-left: 20px;
   width: 40px;
@@ -64,13 +63,13 @@
 .header button:active{
   background-color:hsl(246, 41%, 30%);
   animation: buttonclick 0.3s ease 0s;
-}
+} */
 
 .main{
   height: 100%;
   /* background-color: rgb(141, 134, 201); purple*/
   background-color: #1e728b;
-  display: block;
+  display: fixed;
   display: flex;
   /* justify-content: flex-start; */
   /* align-items: center; */

@@ -7,11 +7,11 @@ import axios from 'axios';
 
 
 export const ProductContext = React.createContext()
-export const MenuContext = React.createContext()
+// export const MenuContext = React.createContext()
 export const FilteredContext = React.createContext()
 
 function App() {
-  const [menuVisible , setMenuVisible] = useState(false)
+  // const [menuVisible , setMenuVisible] = useState(false)
   const [products , setProducts] = useState([])
   const [ filteredProducts , setFilteredProducts ] = useState([])
 
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       
-      <Header menuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
+      <Header />
       
       <div style={{
         width: '100%',
@@ -37,11 +37,12 @@ function App() {
         position:'fixed',
         zIndex: '200'
       }}/>
+      
       <ProductContext.Provider value={products}>
         <FilteredContext.Provider value={{filteredProducts: filteredProducts , setFilteredProducts: setFilteredProducts}}>
-          <MenuContext.Provider value={{menuVisible: menuVisible , setMenuVisible :setMenuVisible}}>
-            <Main menuVisible={menuVisible}/>
-          </MenuContext.Provider> 
+          {/* <MenuContext.Provider value={{menuVisible: menuVisible , setMenuVisible :setMenuVisible}}> */}
+            <Main />
+          {/* </MenuContext.Provider> */}
         </FilteredContext.Provider>
       </ProductContext.Provider>
       

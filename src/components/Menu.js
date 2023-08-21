@@ -1,6 +1,6 @@
 import React, { useContext} from 'react'
 import '../Menu.css'
-import { FilteredContext, MenuContext, ProductContext } from '../App.js'
+import { FilteredContext, ProductContext } from '../App.js'
 import '../App.css'
 import '../Menu.css'
 
@@ -10,8 +10,8 @@ function Menu() {
     "womens-jewellery","sunglasses","automotive","motorcycle","lighting"]
 
     const productsContext = useContext(ProductContext)
-    const menuContext = useContext(MenuContext)
-    const {menuVisible , setMenuVisible} = menuContext
+    // const menuContext = useContext(MenuContext)
+    // const {menuVisible , setMenuVisible} = menuContext
     const Allproducts  = productsContext
     const filteredContext = useContext(FilteredContext)
 
@@ -24,7 +24,7 @@ function Menu() {
 
     return (
     <div className='menu'>
-        <button className='closeMenu' onClick={() => {setMenuVisible(!menuVisible)}}><img src='https://i.imgur.com/hutSn84.png' alt='closemenu' /></button>
+        {/* <button className='closeMenu' onClick={() => {setMenuVisible(!menuVisible)}}><img src='https://i.imgur.com/hutSn84.png' alt='closemenu' /></button> */}
 
          <ul className='categorylist'>
             <li>
