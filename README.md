@@ -1,6 +1,6 @@
 ## Deployed Website
 
-https://s4ds-task.vercel.app/
+https://popshop.vercel.app/
 
 ## Available Scripts
 
