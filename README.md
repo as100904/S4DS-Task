@@ -1,6 +1,6 @@
 ## Deployed Website
 
-https://popshop.vercel.app/
+https://popshop-market.vercel.app/
 
 ## Available Scripts
 
